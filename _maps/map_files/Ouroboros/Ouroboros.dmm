@@ -9035,6 +9035,7 @@
 "cJI" = (
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/structure/cable,
+/obj/machinery/byteforge,
 /turf/open/floor/iron/dark/small,
 /area/station/cargo/drone_bay)
 "cJP" = (
@@ -9935,6 +9936,7 @@
 /obj/machinery/exodrone_launcher,
 /obj/item/exodrone,
 /obj/machinery/light_switch/directional/south,
+/obj/item/fuel_pellet,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/station/cargo/drone_bay)
 "cZA" = (
@@ -13027,6 +13029,7 @@
 "dTp" = (
 /obj/effect/turf_decal/tile/brown/opposingcorners,
 /obj/effect/turf_decal/tile/yellow,
+/obj/machinery/netpod,
 /turf/open/floor/iron/dark,
 /area/station/cargo/drone_bay)
 "dTz" = (
@@ -17327,7 +17330,6 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
 	},
-/obj/effect/landmark/start/cargo_technician,
 /turf/open/floor/iron/dark/small,
 /area/station/cargo/drone_bay)
 "ffg" = (
@@ -43327,14 +43329,11 @@
 /area/station/engineering/atmos/hfr_room)
 "mIL" = (
 /obj/machinery/airalarm/directional/south,
-/obj/effect/spawner/random/food_or_drink/booze{
-	pixel_y = 6;
-	spawn_loot_count = 2;
-	spawn_random_offset = 2
-	},
-/obj/structure/table,
 /obj/machinery/light/warm/directional/west,
 /obj/item/radio/intercom/directional/west,
+/obj/machinery/computer/quantum_console{
+	dir = 1
+	},
 /turf/open/floor/iron/dark/small,
 /area/station/cargo/drone_bay)
 "mJb" = (
@@ -58010,6 +58009,10 @@
 /obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/iron,
 /area/station/engineering/supermatter/room)
+"reR" = (
+/obj/machinery/computer/order_console/bitrunning,
+/turf/open/floor/iron/dark,
+/area/station/cargo/office)
 "reS" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -60927,15 +60930,18 @@
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit/departure_lounge)
 "rYI" = (
-/obj/machinery/door/airlock/mining/glass{
-	name = "Drone Bay"
-	},
 /obj/machinery/door/firedoor,
 /obj/effect/mapping_helpers/airlock/access/any/supply/general,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/airlock/mining/glass{
+	name = "Cargo Systems Room"
+	},
+/obj/effect/landmark/navigate_destination{
+	location = "Cargo Systems Room"
+	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/cargo/drone_bay)
 "rYN" = (
@@ -65051,6 +65057,9 @@
 "tio" = (
 /obj/machinery/exodrone_launcher,
 /obj/item/exodrone,
+/obj/item/fuel_pellet{
+	pixel_x = 4
+	},
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/station/cargo/drone_bay)
 "tiE" = (
@@ -74760,13 +74769,11 @@
 /area/station/hallway/secondary/command)
 "vZZ" = (
 /obj/machinery/firealarm/directional/south,
-/obj/item/fuel_pellet,
-/obj/item/fuel_pellet{
-	pixel_x = 4
-	},
-/obj/structure/table,
 /obj/machinery/camera/directional/south{
 	c_tag = "Cargo - Drone Bay"
+	},
+/obj/machinery/quantum_server{
+	pixel_y = 3
 	},
 /turf/open/floor/iron/dark/small,
 /area/station/cargo/drone_bay)
@@ -169384,7 +169391,7 @@ vBE
 swl
 ogU
 dqM
-dqM
+reR
 mFq
 dTp
 juW

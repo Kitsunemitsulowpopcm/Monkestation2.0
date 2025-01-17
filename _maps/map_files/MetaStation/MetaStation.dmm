@@ -7533,6 +7533,36 @@
 "cLN" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/firealarm/directional/west,
+/obj/structure/table,
+/obj/item/stock_parts/micro_laser{
+	pixel_x = 6;
+	pixel_y = -2
+	},
+/obj/item/stock_parts/micro_laser{
+	pixel_x = 2
+	},
+/obj/item/stock_parts/micro_laser{
+	pixel_x = -2;
+	pixel_y = 2
+	},
+/obj/item/stock_parts/micro_laser{
+	pixel_x = -6;
+	pixel_y = 4
+	},
+/obj/item/stock_parts/scanning_module{
+	pixel_x = 5
+	},
+/obj/item/stock_parts/scanning_module{
+	pixel_x = 5;
+	pixel_y = 7
+	},
+/obj/item/stock_parts/scanning_module{
+	pixel_x = -5
+	},
+/obj/item/stock_parts/scanning_module{
+	pixel_x = -5;
+	pixel_y = 7
+	},
 /turf/open/floor/plating,
 /area/station/cargo/drone_bay)
 "cLS" = (
@@ -8599,6 +8629,14 @@
 "dfU" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/extinguisher_cabinet/directional/east,
+/obj/structure/rack,
+/obj/item/circuitboard/machine/exoscanner{
+	pixel_y = -3
+	},
+/obj/item/circuitboard/machine/exoscanner,
+/obj/item/circuitboard/machine/exoscanner{
+	pixel_y = 3
+	},
 /turf/open/floor/plating,
 /area/station/cargo/drone_bay)
 "dgc" = (
@@ -10914,25 +10952,6 @@
 /obj/effect/spawner/random/engineering/tracking_beacon,
 /turf/open/floor/iron,
 /area/station/security/courtroom)
-"dYi" = (
-/obj/structure/table,
-/obj/item/stock_parts/micro_laser{
-	pixel_x = -6;
-	pixel_y = 4
-	},
-/obj/item/stock_parts/micro_laser{
-	pixel_x = -2;
-	pixel_y = 2
-	},
-/obj/item/stock_parts/micro_laser{
-	pixel_x = 2
-	},
-/obj/item/stock_parts/micro_laser{
-	pixel_x = 6;
-	pixel_y = -2
-	},
-/turf/open/floor/iron,
-/area/station/cargo/drone_bay)
 "dYl" = (
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
@@ -15247,6 +15266,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/bluespace_vendor/directional/north,
 /turf/open/floor/iron,
 /area/station/hallway/primary/port)
 "fxQ" = (
@@ -16747,7 +16767,6 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/bluespace_vendor/directional/north,
 /turf/open/floor/iron,
 /area/station/hallway/primary/port)
 "gaG" = (
@@ -23222,6 +23241,9 @@
 /area/station/hallway/primary/port)
 "ikL" = (
 /obj/structure/cable,
+/obj/structure/chair/office{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
 "ikO" = (
@@ -24435,21 +24457,7 @@
 /turf/open/floor/iron/dark,
 /area/station/security/range)
 "iDG" = (
-/obj/structure/table,
-/obj/item/stock_parts/scanning_module{
-	pixel_x = -5;
-	pixel_y = 7
-	},
-/obj/item/stock_parts/scanning_module{
-	pixel_x = 5;
-	pixel_y = 7
-	},
-/obj/item/stock_parts/scanning_module{
-	pixel_x = -5
-	},
-/obj/item/stock_parts/scanning_module{
-	pixel_x = 5
-	},
+/obj/machinery/computer/order_console/bitrunning,
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
 "iDN" = (
@@ -39343,11 +39351,14 @@
 "nzg" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/airlock/mining{
-	name = "Drone Bay"
-	},
 /obj/structure/cable,
-/obj/effect/mapping_helpers/airlock/access/any/supply/maintenance,
+/obj/effect/mapping_helpers/airlock/access/all/supply/general,
+/obj/machinery/door/airlock/mining/glass{
+	name = "Cargo Systems Room"
+	},
+/obj/effect/landmark/navigate_destination{
+	location = "Cargo Systems Room"
+	},
 /turf/open/floor/plating,
 /area/station/cargo/drone_bay)
 "nzh" = (
@@ -40820,14 +40831,14 @@
 /turf/open/floor/grass,
 /area/station/service/hydroponics)
 "obF" = (
-/obj/machinery/computer/exoscanner_control{
-	dir = 1
-	},
 /obj/machinery/camera/directional/south{
 	c_tag = "Cargo Bay - Drone Launch Room";
 	pixel_x = 14
 	},
 /obj/structure/sign/poster/official/random/directional/south,
+/obj/machinery/computer/quantum_console{
+	dir = 1
+	},
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
 "obG" = (
@@ -44014,10 +44025,6 @@
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/turret_protected/ai)
 "phP" = (
-/obj/structure/table,
-/obj/item/exodrone{
-	pixel_y = 8
-	},
 /obj/item/radio/intercom/directional/east,
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
@@ -47418,10 +47425,10 @@
 /turf/open/floor/iron/dark,
 /area/station/service/chapel/office)
 "qrF" = (
-/obj/machinery/computer/exodrone_control_console{
-	dir = 1
-	},
 /obj/machinery/newscaster/directional/south,
+/obj/machinery/quantum_server{
+	pixel_y = 3
+	},
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
 "qrQ" = (
@@ -49698,15 +49705,7 @@
 /turf/open/floor/carpet,
 /area/station/command/corporate_showroom)
 "rgL" = (
-/obj/structure/table,
-/obj/item/reagent_containers/cup/glass/mug/britcup{
-	pixel_x = -6;
-	pixel_y = 11
-	},
-/obj/item/phone{
-	pixel_x = 6;
-	pixel_y = 1
-	},
+/obj/machinery/byteforge,
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
 "rgN" = (
@@ -58662,7 +58661,7 @@
 /area/station/commons/toilet/restrooms)
 "ujT" = (
 /obj/machinery/airalarm/directional/west,
-/obj/effect/spawner/random/structure/tank_holder,
+/obj/machinery/netpod,
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
 "uke" = (
@@ -59538,10 +59537,11 @@
 /turf/closed/wall/r_wall,
 /area/station/security/prison/visit)
 "uzb" = (
-/obj/structure/rack,
 /obj/machinery/light/directional/east,
-/obj/item/fuel_pellet,
 /obj/machinery/light_switch/directional/east,
+/obj/machinery/computer/exodrone_control_console{
+	dir = 8
+	},
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
 "uzc" = (
@@ -64644,16 +64644,11 @@
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/fore)
 "wrG" = (
-/obj/structure/rack,
-/obj/item/circuitboard/machine/exoscanner{
-	pixel_y = 3
-	},
-/obj/item/circuitboard/machine/exoscanner,
-/obj/item/circuitboard/machine/exoscanner{
-	pixel_y = -3
-	},
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/east,
+/obj/machinery/computer/exoscanner_control{
+	dir = 8
+	},
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
 "wrJ" = (
@@ -68708,10 +68703,6 @@
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
-"xMx" = (
-/obj/structure/chair/office,
-/turf/open/floor/iron,
-/area/station/cargo/drone_bay)
 "xMz" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -69030,7 +69021,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit/departure_lounge)
 "xQO" = (
-/obj/machinery/exodrone_launcher,
+/obj/item/fuel_pellet,
 /turf/open/floor/plating,
 /area/station/cargo/drone_bay)
 "xQT" = (
@@ -70208,10 +70199,6 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/iron/white,
 /area/station/medical/treatment_center)
-"yme" = (
-/obj/structure/sign/warning/pods,
-/turf/closed/wall,
-/area/station/security/checkpoint/customs)
 "ymg" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -83451,7 +83438,7 @@ wpw
 xNg
 wdr
 wdr
-wdr
+mtL
 qEt
 qEt
 qEt
@@ -84225,7 +84212,7 @@ fcq
 xjh
 qhW
 xjh
-yme
+xjh
 fxI
 tep
 dHc
@@ -89841,12 +89828,12 @@ aaa
 aaa
 aaa
 tdg
-hkj
 sQp
+hkj
 cLN
 lfY
 ujT
-dYi
+qST
 iDG
 jXu
 bSm
@@ -90098,7 +90085,7 @@ aaa
 aaa
 aaa
 tdg
-hkj
+xQO
 hkj
 kuW
 mWY
@@ -90355,12 +90342,12 @@ lMJ
 lMJ
 lMJ
 tdg
-hkj
+sQp
 xQO
 dfU
 ikL
 qST
-xMx
+qST
 qrF
 jXu
 wfn

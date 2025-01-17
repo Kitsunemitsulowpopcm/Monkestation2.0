@@ -4845,37 +4845,8 @@
 /obj/structure/disposalpipe/segment{
 	dir = 5
 	},
-/obj/item/stock_parts/scanning_module{
-	pixel_x = -5;
-	pixel_y = 7
-	},
-/obj/item/stock_parts/scanning_module{
-	pixel_x = 5;
-	pixel_y = 7
-	},
-/obj/item/stock_parts/scanning_module{
-	pixel_x = -5
-	},
-/obj/item/stock_parts/scanning_module{
-	pixel_x = 5
-	},
-/obj/structure/table,
-/obj/item/stock_parts/micro_laser{
-	pixel_x = -6;
-	pixel_y = 4
-	},
-/obj/item/stock_parts/micro_laser{
-	pixel_x = -2;
-	pixel_y = 2
-	},
-/obj/item/stock_parts/micro_laser{
-	pixel_x = 2
-	},
-/obj/item/stock_parts/micro_laser{
-	pixel_x = 6;
-	pixel_y = -2
-	},
 /obj/effect/turf_decal/tile/brown/anticorner/contrasted,
+/obj/machinery/byteforge,
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
 "bfz" = (
@@ -11052,19 +11023,41 @@
 /area/station/maintenance/department/chapel)
 "cAw" = (
 /obj/structure/cable,
-/obj/structure/rack,
-/obj/item/circuitboard/machine/exoscanner{
-	pixel_y = -3
-	},
-/obj/item/circuitboard/machine/exoscanner,
-/obj/item/circuitboard/machine/exoscanner{
-	pixel_y = 3
-	},
-/obj/effect/turf_decal/bot,
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/effect/turf_decal/tile/brown/half/contrasted{
 	dir = 8
 	},
+/obj/structure/table,
+/obj/item/stock_parts/micro_laser{
+	pixel_x = -6;
+	pixel_y = 4
+	},
+/obj/item/stock_parts/micro_laser{
+	pixel_x = -2;
+	pixel_y = 2
+	},
+/obj/item/stock_parts/micro_laser{
+	pixel_x = 2
+	},
+/obj/item/stock_parts/micro_laser{
+	pixel_x = 6;
+	pixel_y = -2
+	},
+/obj/item/stock_parts/scanning_module{
+	pixel_x = 5;
+	pixel_y = 7
+	},
+/obj/item/stock_parts/scanning_module{
+	pixel_x = 5
+	},
+/obj/item/stock_parts/scanning_module{
+	pixel_x = -5
+	},
+/obj/item/stock_parts/scanning_module{
+	pixel_x = -5;
+	pixel_y = 7
+	},
+/obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
 "cAF" = (
@@ -41897,7 +41890,6 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/electrical)
 "jPU" = (
-/obj/effect/landmark/start/cargo_technician,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron,
@@ -47249,12 +47241,15 @@
 /obj/item/pen{
 	pixel_x = -7
 	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/item/fuel_pellet{
+	pixel_x = 8
+	},
 /obj/item/reagent_containers/cup/glass/mug/britcup{
 	pixel_x = 6;
 	pixel_y = -4
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
 	},
 /obj/structure/window/spawner/directional/north,
 /obj/structure/table,
@@ -51803,14 +51798,11 @@
 /turf/open/floor/glass/reinforced,
 /area/station/commons/fitness/recreation)
 "mhe" = (
-/obj/item/exodrone{
-	pixel_y = 8
-	},
-/obj/structure/table,
 /obj/machinery/airalarm/directional/west,
 /obj/effect/turf_decal/tile/brown/anticorner/contrasted{
 	dir = 8
 	},
+/obj/machinery/netpod,
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
 "mhg" = (
@@ -61352,6 +61344,9 @@
 /obj/effect/turf_decal/tile/brown/half/contrasted{
 	dir = 4
 	},
+/obj/machinery/quantum_server{
+	pixel_y = 3
+	},
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
 "ozs" = (
@@ -68759,13 +68754,6 @@
 /area/station/service/barber)
 "qlK" = (
 /obj/machinery/light/directional/south,
-/obj/structure/table,
-/obj/item/fuel_pellet{
-	pixel_x = 8
-	},
-/obj/item/wrench{
-	pixel_x = -4
-	},
 /obj/effect/turf_decal/tile/brown/half/contrasted,
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
@@ -78869,11 +78857,18 @@
 /area/station/maintenance/port/aft)
 "sJd" = (
 /obj/structure/cable,
-/obj/item/kirbyplants/random,
 /obj/machinery/light/directional/west,
 /obj/machinery/light_switch/directional/west,
 /obj/effect/turf_decal/tile/brown/half/contrasted{
 	dir = 8
+	},
+/obj/structure/rack,
+/obj/item/circuitboard/machine/exoscanner{
+	pixel_y = -3
+	},
+/obj/item/circuitboard/machine/exoscanner,
+/obj/item/circuitboard/machine/exoscanner{
+	pixel_y = 3
 	},
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
@@ -79630,6 +79625,9 @@
 	dir = 4
 	},
 /obj/structure/sign/poster/random/directional/east,
+/obj/machinery/computer/quantum_console{
+	dir = 8
+	},
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
 "sQV" = (
@@ -94061,7 +94059,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/mining/glass{
-	name = "Drone Bay"
+	name = "Cargo Systems Room"
 	},
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/stripes/line{
@@ -94069,6 +94067,9 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/effect/mapping_helpers/airlock/access/all/supply/general,
+/obj/effect/landmark/navigate_destination{
+	location = "Cargo Systems Room"
+	},
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
 "woW" = (
@@ -94161,11 +94162,10 @@
 /area/station/maintenance/starboard/aft)
 "wpO" = (
 /obj/machinery/status_display/ai/directional/north,
-/obj/structure/table,
-/obj/item/paper_bin,
 /obj/effect/turf_decal/tile/brown/half/contrasted{
 	dir = 1
 	},
+/obj/machinery/computer/order_console/bitrunning,
 /turf/open/floor/iron,
 /area/station/cargo/office)
 "wpQ" = (
@@ -101194,6 +101194,9 @@
 "xYZ" = (
 /obj/machinery/exodrone_launcher,
 /obj/effect/turf_decal/box,
+/obj/item/exodrone{
+	pixel_y = 8
+	},
 /turf/open/floor/plating,
 /area/station/cargo/drone_bay)
 "xZh" = (

@@ -3869,7 +3869,6 @@
 /turf/open/floor/iron,
 /area/station/cargo/storage)
 "axJ" = (
-/obj/structure/reagent_dispensers/fueltank,
 /obj/effect/turf_decal/trimline/brown/filled/line{
 	dir = 9
 	},
@@ -4284,7 +4283,8 @@
 /turf/open/floor/iron,
 /area/station/security/brig)
 "aBU" = (
-/obj/structure/chair/office,
+/obj/item/radio/intercom/directional/south,
+/obj/machinery/netpod,
 /turf/open/floor/iron/dark,
 /area/station/cargo/drone_bay)
 "aBV" = (
@@ -16160,7 +16160,9 @@
 /turf/open/floor/iron,
 /area/station/commons/storage/primary)
 "dYv" = (
-/obj/effect/decal/cleanable/dirt,
+/obj/machinery/computer/exoscanner_control{
+	dir = 8
+	},
 /turf/open/floor/iron/dark,
 /area/station/cargo/drone_bay)
 "dYO" = (
@@ -16851,25 +16853,13 @@
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/tram/right)
 "ejU" = (
-/obj/structure/table,
-/obj/item/stock_parts/scanning_module{
-	pixel_x = -5;
-	pixel_y = 7
-	},
-/obj/item/stock_parts/scanning_module{
-	pixel_x = 5;
-	pixel_y = 7
-	},
-/obj/item/stock_parts/scanning_module{
-	pixel_x = -5
-	},
-/obj/item/stock_parts/scanning_module{
-	pixel_x = 5
-	},
 /obj/effect/turf_decal/trimline/brown/filled/line{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/quantum_server{
+	pixel_y = 3
+	},
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
 "eka" = (
@@ -19004,7 +18994,11 @@
 /turf/open/floor/iron,
 /area/station/security/execution/transfer)
 "eUo" = (
+/obj/machinery/exodrone_launcher,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/exodrone{
+	pixel_y = 8
+	},
 /turf/open/floor/plating,
 /area/station/cargo/drone_bay)
 "eUp" = (
@@ -24579,10 +24573,8 @@
 /turf/open/floor/iron,
 /area/station/commons/fitness/recreation)
 "gKy" = (
-/obj/structure/table,
-/obj/item/phone{
-	pixel_x = 6;
-	pixel_y = 4
+/obj/machinery/computer/exodrone_control_console{
+	dir = 8
 	},
 /turf/open/floor/iron/dark,
 /area/station/cargo/drone_bay)
@@ -32394,10 +32386,9 @@
 /turf/closed/wall,
 /area/station/science/xenobiology)
 "jiS" = (
-/obj/machinery/computer/exoscanner_control{
-	dir = 1
-	},
-/turf/open/floor/iron/dark,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/reagent_dispensers/fueltank,
+/turf/open/floor/iron/smooth,
 /area/station/cargo/drone_bay)
 "jjj" = (
 /obj/structure/disposalpipe/segment{
@@ -35420,7 +35411,10 @@
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/tram/mid)
 "kfO" = (
-/turf/open/floor/plating,
+/obj/structure/chair/office{
+	dir = 4
+	},
+/turf/open/floor/iron/dark,
 /area/station/cargo/drone_bay)
 "kfT" = (
 /obj/structure/lattice,
@@ -39174,6 +39168,36 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/effect/turf_decal/trimline/brown/filled/line{
 	dir = 5
+	},
+/obj/structure/table,
+/obj/item/stock_parts/scanning_module{
+	pixel_x = 5
+	},
+/obj/item/stock_parts/scanning_module{
+	pixel_x = 5;
+	pixel_y = 7
+	},
+/obj/item/stock_parts/scanning_module{
+	pixel_x = -5
+	},
+/obj/item/stock_parts/scanning_module{
+	pixel_x = -5;
+	pixel_y = 7
+	},
+/obj/item/stock_parts/micro_laser{
+	pixel_x = 6;
+	pixel_y = -2
+	},
+/obj/item/stock_parts/micro_laser{
+	pixel_x = 2
+	},
+/obj/item/stock_parts/micro_laser{
+	pixel_x = -2;
+	pixel_y = 2
+	},
+/obj/item/stock_parts/micro_laser{
+	pixel_x = -6;
+	pixel_y = 4
 	},
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
@@ -54964,9 +54988,7 @@
 /turf/open/floor/iron/dark,
 /area/station/science/robotics/mechbay)
 "qos" = (
-/obj/machinery/exodrone_launcher,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
+/turf/open/floor/iron/dark,
 /area/station/cargo/drone_bay)
 "qoE" = (
 /obj/structure/table,
@@ -56512,13 +56534,10 @@
 /turf/open/floor/plastic,
 /area/station/engineering/break_room)
 "qMb" = (
-/obj/structure/table,
-/obj/item/exodrone{
-	pixel_y = 8
-	},
 /obj/effect/turf_decal/trimline/brown/filled/line{
 	dir = 8
 	},
+/obj/machinery/byteforge,
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
 "qMf" = (
@@ -68310,19 +68329,14 @@
 /turf/open/misc/asteroid/airless,
 /area/ruin/powered/clownplanet)
 "uwE" = (
-/obj/structure/rack,
-/obj/item/circuitboard/machine/exoscanner{
-	pixel_y = 3
-	},
-/obj/item/circuitboard/machine/exoscanner,
-/obj/item/circuitboard/machine/exoscanner{
-	pixel_y = -3
-	},
 /obj/effect/turf_decal/trimline/brown/filled/line{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/directional/west,
+/obj/machinery/computer/quantum_console{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
 "uwT" = (
@@ -68564,15 +68578,18 @@
 /turf/open/floor/iron/dark,
 /area/station/security/interrogation)
 "uAN" = (
-/obj/machinery/door/airlock/mining{
-	name = "Drone Bay"
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/mapping_helpers/airlock/access/all/supply/general,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /obj/machinery/door/firedoor,
+/obj/effect/landmark/navigate_destination{
+	location = "Cargo Systems Room"
+	},
+/obj/machinery/door/airlock/mining/glass{
+	name = "Cargo Systems Room"
+	},
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
 "uAW" = (
@@ -72971,10 +72988,14 @@
 /turf/open/floor/glass/reinforced,
 /area/station/engineering/break_room)
 "vOH" = (
-/obj/machinery/computer/exodrone_control_console{
-	dir = 1
+/obj/structure/table,
+/obj/item/circuitboard/machine/exoscanner{
+	pixel_y = -3
 	},
-/obj/item/radio/intercom/directional/south,
+/obj/item/circuitboard/machine/exoscanner,
+/obj/item/circuitboard/machine/exoscanner{
+	pixel_y = 3
+	},
 /turf/open/floor/iron/dark,
 /area/station/cargo/drone_bay)
 "vOM" = (
@@ -78576,25 +78597,10 @@
 /turf/open/floor/iron,
 /area/station/hallway/secondary/entry)
 "xIV" = (
-/obj/structure/table,
-/obj/item/stock_parts/micro_laser{
-	pixel_x = -6;
-	pixel_y = 4
-	},
-/obj/item/stock_parts/micro_laser{
-	pixel_x = -2;
-	pixel_y = 2
-	},
-/obj/item/stock_parts/micro_laser{
-	pixel_x = 2
-	},
-/obj/item/stock_parts/micro_laser{
-	pixel_x = 6;
-	pixel_y = -2
-	},
 /obj/effect/turf_decal/trimline/brown/filled/line{
 	dir = 10
 	},
+/obj/machinery/computer/order_console/bitrunning,
 /turf/open/floor/iron,
 /area/station/cargo/drone_bay)
 "xJA" = (
@@ -194438,7 +194444,7 @@ xxZ
 mhQ
 mhQ
 mhQ
-mhQ
+jiS
 xxZ
 xxZ
 uAN
@@ -195211,15 +195217,15 @@ aac
 aac
 aac
 dez
-gTu
-kZt
-kZt
-kZt
-ydp
+vOH
+qos
+qos
+qos
+qos
 rSk
-dYv
-jiS
+qos
 xxZ
+aaa
 aaa
 uno
 qUX
@@ -195468,15 +195474,15 @@ aac
 aac
 aac
 dez
-kfO
-pfZ
-kfO
+gTu
+kZt
+ydp
 qos
-mvi
+kfO
 bQt
 aBU
-vOH
 xxZ
+aaa
 aaa
 uno
 fUh
@@ -195725,15 +195731,15 @@ aac
 aac
 aac
 dez
-kfO
+pfZ
 eUo
-eUo
-kfO
 mvi
-owm
-gKy
 bKs
+dYv
+gKy
+owm
 xxZ
+aaa
 aaa
 uno
 rzO
@@ -195990,7 +195996,7 @@ dez
 xxZ
 xxZ
 xxZ
-xxZ
+aaa
 aaa
 uno
 uno
@@ -196247,7 +196253,7 @@ aac
 aac
 aac
 aac
-aac
+aaa
 aaa
 aaa
 aaa
